@@ -1,21 +1,19 @@
 ---
 layout: workshop
 root: .
-venue: Euphoric State University
-address: 123 College Street, Euphoria
+venue: American Astronomical Society 225th Meeting
+address: Seattle Convention Center, Seattle WA
 country: United-States
-humandate: Feb 17-18, 2020
-humantime: 9:00 am - 4:30 pm
-startdate: 2020-06-17
-enddate: 2020-06-18
-latlng: 41.7901128,-87.6007318
-registration: restricted
-instructor: ["Grace Hopper", "Alan Turing"]
-helper: ["John von Neumann"]
-contact: admin@software-carpentry.org
-#redirect: http://www.3rd.party.workshop.home.page.com
-#eventbrite: 00000000000
-lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
+humandate: Jan 03-04, 2015
+humantime: 9:00 am - 5:30 pm
+startdate: 2015-01-03
+enddate: 2015-01-04
+latlng: 47.5765025,-122.4066275
+registration: http://aas.org/meetings/aas225/registration
+instructor: ["Azalee Bostroem", "Erik Bray", "Matt Davis", "Phil Rosenfield"]
+helper: ["Pauline Bramby,", "Sophie Clayton", "Jens von der Linden"]
+contact: kabostroem@ucdavis.edu
+lessons: ['Python', 'Git', 'Bash']
 ---
 <!--
     Edit the values in the parameter block above to be appropriate for your workshop.
@@ -23,16 +21,6 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
 -->
 
 <!-- Remove the block below. -->
-<div align="center">
-  <p><strong><em>
-      This page is a template for workshop home pages.
-      <br/>
-      Please see
-      <a href="//github.com/swcarpentry/bc">github.com/swcarpentry/bc</a>
-      for instructions on how to create
-      a repository for your workshop.
-  </em></strong></p>
-</div>
 
 <!--
     This block includes the Eventbrite registration widget if 'eventbrite' has been set in the header.
@@ -69,7 +57,10 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
 -->
 <p>
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  The course is aimed at astronomers at all stages of their education and careers who wish
+  to learn computational tools to increase the reproducibility and efficiency of their work.
+  Participants should have some knowledge of programming and be able to navigate
+  directories via the shell. Specific knowledge of Python and Git are not required.
 </p>
 
 <!--
@@ -94,6 +85,8 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
   Participants must bring a laptop with a few specific software packages installed
   (listed below). They are also required to abide by Software Carpentry's
   <a href="http://software-carpentry.org/conduct.html">Code of Conduct</a>.
+  Participants should have some knowledge of programming and be able to navigate
+  directories via the shell. Specific knowledge of Python and Git are not required.
 </p>
 
 <!--
@@ -122,23 +115,28 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
   <div class="span6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td> <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td><em>10:30</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>08:00</td> <td>Set-up</td> <td>All</td></tr>
+      <tr> <td>09:00</td> <td>Introduction</td> <td></td></tr>
+      <tr> <td>09:30</td> <td>Automating tasks with the Unix shell</td> <td>Matt</td></tr>
+      <tr> <td><em>10:45</em></td> <td><em>Coffee break</em></td> <td></td></tr>
+      <tr> <td>11:00</td> <td>Automating tasks with the Unix shell</td><td>Matt</td> </tr>
       <tr> <td>12:00</td> <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td> <td>Building programs with Python</td> </tr>
+      <tr> <td>13:00</td> <td>Building programs with Python</td> <td>Erik/Phil</td></tr>
       <tr> <td><em>14:30</em></td> <td><em>Coffee break</em></td> </tr>
-      <tr> <td>16:00</td> <td>Wrap-up</td> </tr>
+      <tr> <td>14:45</td> <td>Building programs with Python</td> <td>Erik/Phil</td></tr>
+      <tr> <td>16:30</td> <td>Code Review</td><td>Matt</td> </tr>
     </table>
   </div>
   <div class="span6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td> <td>Version control with Git</td> </tr>
-      <tr> <td><em>10:30</em></td> <td><em>Coffee break</em></td> </tr>
-      <tr> <td>12:00</td> <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td> <td>Managing data with SQL</td> </tr>
-      <tr> <td><em>14:30</em></td> <td><em>Coffee break</em></td> </tr>
-      <tr> <td>16:00</td> <td>Wrap-up</td> </tr>
+      <tr> <td>09:00</td> <td>Version control with Git</td> <td>Azalee</td></tr>
+      <tr> <td><em>10:45</em></td> <td><em>Coffee break</em></td> <td></td></tr>
+      <tr> <td>11:00</td> <td>Version control with Git</td> <td>Azalee</td></tr>
+      <tr> <td>12:15</td> <td>Lunch break</td> <td></td></tr>
+      <tr> <td>13:15</td> <td>Python for Astronomers</td><td> Erik/Phil</td> </tr>
+      <tr> <td><em>15:15</em></td> <td><em>Coffee break</em></td><td></td> </tr>
+      <tr> <td>15:30</td> <td>Show and Tell</td> <td></td></tr>
     </table>
   </div>
 </div>
@@ -176,18 +174,6 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
       <li><a href="novice/ref/03-python.html">Reference...</a></li>
     </ul>
   </div>
-  <div class="span6">
-    <h3>Programming in R</h3>
-    <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals: <code>for</code>, <code>if</code>, <code>else</code></li>
-      <li>Using R from the command line</li>
-      <li><a href="novice/ref/06-R.html">Reference...</a></li>
-    </ul>
-  </div>
-</div>
 
 <div class="row-fluid">
   <div class="span6">
@@ -204,21 +190,7 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
       <li><a href="novice/ref/02-git.html">Reference...</a></li>
     </ul>
   </div>
-  <div class="span6">
-    <h3>Managing Data with SQL</h3>
-    <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="novice/ref/04-sql.html">Reference...</a></li>
-    </ul>
-  </div>
-</div>
+
 
 <hr/>
 
@@ -230,7 +202,7 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
 <h2>Setup</h2>
 
 <p>
-  To participate in a Software Carpentry workshop, 
+  To participate in a Software Carpentry workshop,
   you will need working copies of the software described below.
   Please make sure to install everything
   (or at least to download the installers)
