@@ -70,12 +70,12 @@ CHECKS = [
     'virtual-browser',
 # Version control
     'git',
-    'hg',              # Command line tool
+    #'hg',              # Command line tool
     #'mercurial',       # Python package
-    'EasyMercurial',
+    #'EasyMercurial',
 # Build tools and packaging
-    'make',
-    'virtual-pypi-installer',
+    #'make',
+    #'virtual-pypi-installer',
     'setuptools',
     #'xcode',
 # Testing
@@ -84,8 +84,8 @@ CHECKS = [
     'py.test',         # Command line tool
     'pytest',          # Python package
 # SQL
-    'sqlite3',         # Command line tool
-    'sqlite3-python',  # Python package
+    #'sqlite3',         # Command line tool
+    #'sqlite3-python',  # Python package
 # Python
     'python',
     'ipython',         # Command line tool
@@ -94,11 +94,11 @@ CHECKS = [
     'numpy',
     'scipy',
     'matplotlib',
-    'pandas',
-    'sympy',
-    'Cython',
-    'networkx',
-    'mayavi.mlab',
+    #'pandas',
+    #'sympy',
+    #'Cython',
+    #'networkx',
+    #'mayavi.mlab',
     ]
 
 CHECKER = {}
