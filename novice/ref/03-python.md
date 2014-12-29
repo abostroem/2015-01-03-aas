@@ -39,13 +39,29 @@ title: Python Reference
 
 #### Functions
 
-*   `def name(...params...)` defines a new function.
-*   `def name(param=default)` specifies a default value for a parameter.
-*   Call a function using `name(...values...)`.
+*   Define a new function with the name `do_stuff` that takes parameters
+    `arg_1`, `arg_2`, and `arg_3`:
+
+        def do_stuff(arg_1, arg_2, arg_3):
+            ...function body indented 4 spaces...
+            ...optionally return a result...
+            return ...value...
+
+    Note: Functions that do not return a result may omit the `return`
+    statement at the end.
+
+*   Define a function that includes an optional parameter with a default
+    value of 1:
+
+        def do_stuff(arg_1, arg_2, arg_3, arg_opt=1):
+            ...function body...
+
+*   Call a function using `do_stuff(...values...)`.
 
 #### Libraries
 
 *   Import a library into a program using `import libraryname`.
+    * Also called a "module" in Python.
 *   The `sys` library contains:
     *   `sys.argv`: the command-line arguments a program was run with.
     *   `sys.stdin`, `sys.stdout`: standard input and output.
