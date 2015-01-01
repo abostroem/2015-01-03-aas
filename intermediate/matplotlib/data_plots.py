@@ -21,7 +21,6 @@ def add_data(color, mag, color_err=None, mag_err=None, inds=None, ax=None):
                     yerr=mag_err[inds], capsize=0, ecolor='gray')
     return ax
 
-#fig, axs = cmd('../10396_NGC419-HRC.gst.fits', 'F555W_VEGA', 'F814W_VEGA', True)
 
 def cmd(fitsfile, filter1, filter2, yfilt='I', xlim=None, ylim=None):
     '''
@@ -74,6 +73,11 @@ def cmd(fitsfile, filter1, filter2, yfilt='I', xlim=None, ylim=None):
 
     return fig, ax
 
+# LF
+
+# Hess
+
+# Click on CMD
 
 
 if __name__ == "__main__":
