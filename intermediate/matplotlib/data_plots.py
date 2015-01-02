@@ -3,13 +3,13 @@
 Script to make CMD, LF, or Hess diagram from a binary fits table
 Written by: Phil Rosenfield
 """
+import argparse
 from astropy.io import fits
 import matplotlib.pylab as plt
 import numpy as np
-import argparse
 import sys
 
-def cmd(color, mag, color_err=None, mag_err=None, ax=None):
+def plot_cmd(color, mag, color_err=None, mag_err=None, ax=None):
     '''
     Plot a Color Magnitude diagram with uncertainties
     
@@ -272,7 +272,7 @@ def main(argv):
     color, mag, color_err, mag_err = load_data(args.file, yfilt=yfilt)
 
     if args.plottype.lower() == 'cmd':    
-        ax = cmd(color, mag, color_err=color_err, mag_err=mag_err)
+        ax = plot_cmd(color, mag, color_err=color_err, mag_err=mag_err)
 
     if args.plottype.lower() == 'hess':
         ax = plot_hess(color, mag, colorbar=args.colorbar,
