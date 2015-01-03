@@ -25,18 +25,14 @@ def plot_cmd(color, mag, color_err=None, mag_err=None, ax=None):
     ax : axes instance
     '''
 
-    # the fits file contains stars that are recovered in only one filter
-    # stars not recovered are given values >= 90. No need to plot em.
-    good, = np.nonzero((np.abs(color) < 30) & (np.abs(mag) < 30))
-
     if ax is None:
         fig, ax = plt.subplots(figsize=(8, 8))
 
-    ax.plot(color[good], mag[good], '.', ms=3)
+    ax.plot(color, mag, '.', ms=3)
 
     if color_err is not None and mag_err is not None:
-        ax.errorbar(color[good], mag[good], fmt='none', lw=1, xerr=color_err[good],
-                    yerr=mag_err[good], capsize=0, ecolor='gray')
+        ax.errorbar(color, mag, fmt='none', lw=1, xerr=color_err,
+                    yerr=mag_err, capsize=0, ecolor='gray')
 
     # reverse yaxis
     ax.set_ylim(ax.get_ylim()[::-1])
@@ -264,22 +260,26 @@ def main(argv):
     if args.filters is not None:
         filter1, filter2 = args.filters.split(',')
     else:
+        print('warning: using V, I as default filter names')
         filter1 = 'V'
         filter2 = 'I'
     
     yfilt = args.yfilter
     
     color, mag, color_err, mag_err = load_data(args.file, yfilt=yfilt)
-
+    # the fits file contains stars that are recovered in only one filter
+    # stars not recovered are given values >= 90. No need to plot em.
+    good, = np.nonzero((np.abs(color) < 30) & (np.abs(mag) < 30))    
+    
     if args.plottype.lower() == 'cmd':    
-        ax = plot_cmd(color, mag, color_err=color_err, mag_err=mag_err)
+        ax = plot_cmd(color[good], mag[good], color_err=color_err[good], mag_err=mag_err[good])
 
     if args.plottype.lower() == 'hess':
-        ax = plot_hess(color, mag, colorbar=args.colorbar,
+        ax = plot_hess(color[good], mag[good], colorbar=args.colorbar,
                        binsize=args.binsize, cbinsize=args.cbinsize)
 
     if args.plottype.lower() == 'lf':
-        ax = plot_lf(mag, args.binsize, yscale=args.yscale)
+        ax = plot_lf(mag[good], args.binsize, yscale=args.yscale)
 
         # make axis labels
         ax.set_xlabel(r'$%s$' % yfilt)
