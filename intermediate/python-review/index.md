@@ -80,15 +80,34 @@ you'll know by the end of this lesson.
 Getting the Files
 -----------------
 
-Our Python tutorial during this bootcamp will rely on a number of additional 
-files. The files that you'll need for each lesson are linked below - download 
-these and save them in an easily accessible folder on your hard drive. Make 
-sure that when you save each file in your browser, the appropriate file 
+Our Python tutorial during this bootcamp come in a number IPython notebook
+files.  For the Python review there are two notebooks: A student notebook
+that contains places to fill out your code as we progress through the lesson,
+and a reference notebook that contains all the examples for the lesson (after
+the workshop this will be updated with any examples we add on the fly).  So if
+you fall behind during the workshop don't fret--all the material will be
+available to you later.
+
+Make sure that when you save each file in your browser, the appropriate file
 extention (i.e., .ipynb) is retained.
 
 *   Scientific Python review
     - [Student Notebook](python.ipynb)
     - [Reference Notebook](python-full.ipynb)
+      - [View Reference Notebook Online](http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/python-review/python-full.ipynb)
+
+*  Generating simulated images (Python scripting lesson):
+   - [Notebook (contains full examples)](https://github.com/abostroem/2015-01-03-aas/raw/gh-pages/intermediate/python-simcluster/simulated.ipynb)
+     - [View notebook online](http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/python-simcluster/simulated.ipynb)
+
+* Plotting with matplotlib
+  - [Notebook (contains full examples)](https://github.com/abostroem/2015-01-03-aas/raw/gh-pages/intermediate/matplotlib/Plotting%20with%20matplotlib.ipynb)
+    - [View notebook online](http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/matplotlib/Plotting%20with%20matplotlib.ipynb)
+  - [data_plots.py (script used in the lesson)](https://github.com/abostroem/2015-01-03-aas/raw/gh-pages/intermediate/matplotlib/data_plots.py)
+
+* Intro to Astropy
+  - [Notebook](https://github.com/abostroem/2015-01-03-aas/raw/gh-pages/intermediate/astropy/Introduction_to_Astropy.ipynb)
+    - [View notebook online](http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/astropy/Introduction_to_Astropy.ipynb)
    
 
 Starting an IPython Notebook
