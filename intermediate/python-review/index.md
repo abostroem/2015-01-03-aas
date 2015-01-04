@@ -95,6 +95,8 @@ extention (i.e., .ipynb) is retained.
     - [Student Notebook](python.ipynb)
     - [Reference Notebook](python-full.ipynb)
       - [View Reference Notebook Online](http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/python-review/python-full.ipynb)
+    - [Instructor Notebook (what the instructor actually typed during
+       the tutorial)](http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/python-review/python-instructor.ipynb)
 
 *  Generating simulated images (Python scripting lesson):
    - [Notebook (contains full examples)](https://github.com/abostroem/2015-01-03-aas/raw/gh-pages/intermediate/python-simcluster/simulated.ipynb)
