@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en-us" />
+<title>/7760$2015-01-03-aas</title>
+</head>
+<body><b><u>Welcome to SWC at the AAS (</u></b>#aas225swc)<br
+/><br
+/>This is a public pad, please respect each other (see SWC Code of Conduct: <a href="http://software-carpentry.org/conduct.html)">http://software-carpentry.org/conduct.html)</a><br
+/><br
+/><u>Instructors:</u><br
+/><ul><li>Azalee Bostroem (@astro_az)</li
+><li>Erik Bray&nbsp;</li
+><li>Matt Davis (@jiffyclub)</li
+><li>Phil Rosenfield (@philrosenfield)<br/><br
+/></li></ul
+>Helpers:<br
+/><ul><li>Pauline Barmby (@pbarmby)<br/><br
+/></li></ul
+>Course Website:<br
+/><ul><li><a href="http://abostroem.github.io/2015-01-03-aas/">http://abostroem.github.io/2015-01-03-aas/</a></li
+><li>or more succinctly: bit.ly/swc-aas-225</li></ul
+>Course Github Repository:<br
+/><ul><li><a href="https://github.com/abostroem/2015-01-03-aas">https://github.com/abostroem/2015-01-03-aas</a><br/><br
+/></li></ul
+>Wi-Fi:<br
+/>Network: AASMTG<br
+/>Password: aas225<br
+
+/>===============================================================<br
+/>Day 2<br
+/><br
+/><br
+/>Etherpad: <a href="http://bit.ly/swc-aas-225-etherpad">http://bit.ly/swc-aas-225-etherpad</a><br
+/>git and github slides:<br
+/>local version control: <a href="http://slides.com/abostroem/local_version_control">http://slides.com/abostroem/local_version_control</a><br
+/>collaborating: <a href="http://slides.com/abostroem/collaborating_using_git">http://slides.com/abostroem/collaborating_using_git</a><br
+/><br
+/>Software Carpentry's git reference: <a href="http://software-carpentry.org/v5/novice/ref/02-git.html">http://software-carpentry.org/v5/novice/ref/02-git.html</a><br
+/><br
+/><br
+/>Git<br
+/>Reasons to use version control as an individual and when working collaboratively. Track changes, fix mistakes, go back, have only one "final" copy, remote backup. Github can also be a way to share your code with others.<br
+/><br
+/>git config --global user.name "Your Name"<br
+/>git config --global user.email "you@some.domain"<br
+/>git config --global color.ui "auto"<br
+/>git config --global core.editor "your_editor"<br
+/><br
+/>git status - gives you information about the current state of your repository. Use this a lot!<br
+/>git add - tell git to keep track of a file. Git will not track files until explicitly told to do so.(other version control systems may work differently as far as tracking goes.)<br
+/>git add - also used to include a changed file in the next commit, have to do this every time.<br
+/>git commit - make a snapshot of your files. only includes files added via git add.<br
+/>&nbsp;&nbsp;&nbsp; Include a message with the -m flag, e.g. git commit -m "this is why I made these changes"<br
+/>&nbsp;&nbsp;&nbsp; (Don't forget the quotes around the message.)<br
+/>git diff - shows you differences between current repo state and most recent commit<br
+/>&nbsp;&nbsp;&nbsp; Only includes tracked files, not new files.<br
+/>git checkout - pull an older version of a file into your working directory<br
+/>&nbsp;&nbsp;&nbsp; Example: git checkout HEAD~1 mars.txt<br
+/>&nbsp;&nbsp;&nbsp; (git checkout is used for lots of things, it can get a bit confusing. you'll see it again.)<br
+/>git remote - manage remote repositories that you talk to<br
+/>&nbsp;&nbsp;&nbsp; Example: git remote add remote_name url_of_remote_repository<br
+/>&nbsp;&nbsp;&nbsp; See what remotes you already have for a repository: git remote -v<br
+/>git push - send your repo over the internet to a remote repository<br
+/>&nbsp;&nbsp;&nbsp; Example: git push origin master<br
+/>&nbsp;&nbsp;&nbsp; In that example "origin" is the name of the remote repository and<br
+/>&nbsp;&nbsp;&nbsp; "master" is the name of the branch you want to send.<br
+/>&nbsp;&nbsp;&nbsp; (More on branches later.)<br
+/>git pull - retrieve changes from a remote repository and incorporate them into your local repo<br
+/>&nbsp;&nbsp;&nbsp; Example: git pull origin master<br
+/>We often say "pull down" and "push up", meaning (from remote) and (to remote).<br
+/><br
+/>Referring to versions: HEAD is current, HEAD~1 the one before that, etc. Note it's tilde, not minus. The big long IDs like 392d1503 ("commit hashes") are absolute references which can be used (eg) when different people combine their repositories, whereas HEAD, HEAD~1 etc are relative references to whatever repository you're working in.<br
+/><br
+/>To pull from our repository:<br
+/>cd to the directory where you want your copy of the repository to be<br
+/>git clone <a href="https://github.com/abostroem/2015-01-03-aas.git">https://github.com/abostroem/2015-01-03-aas.git</a><br
+/>git pull origin gh-pages<br
+/><br
+/>Python:<br
+/>Notebook lives in:<br
+/>2015-01-03-aas/intermediate/python-simcluster<br
+/><br
+/>APLpy is not pre-installed with anaconda. Download and installation instructions are here: <a href="http://aplpy.github.io">http://aplpy.github.io</a><br
+/><br
+/>! at the beginning of a line in the ipython notebook = leave python and execute the following line in the shell<br
+/><br
+/>How to access your environment variables from python:<br
+/>&nbsp;&nbsp;&nbsp; import os<br
+/>&nbsp;&nbsp;&nbsp; os.environ&nbsp;<br
+/><br
+/>%%file simcluster.py at the top of a cell<br
+/>writes the contents of that cell to a file called simcluster.py<br
+/><br
+/>argparse: a python library to parse command line arguments<br
+/><br
+/>if __name__ == "__main__":<br
+/><ul><li>This says if you are running your code from the command line (python simcluster.py ...) then run the piece of code under this line (so in our example run the main function)</li
+><li>If you are importing this file into an active ipython or python session, then this piece of code is ignored (so the main function is never executed) but you can call it at any time<ul><li>&nbsp;e.g.</li></ul
+></li></ul
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &gt;&gt;&gt;import simcluster<br
+/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &gt;&gt;&gt;simcluster.main(variables)<br
+/><ul><li>__main__ and the function we wrote called main are not related, the same name is coincidental<br/><br
+/><br/><br
+/></li></ul
+>Sun Afternoon<br
+/><br
+/>Python lesson plans:<br
+/><a href="http://abostroem.github.io/2015-01-03-aas/intermediate/python-review/index.html">http://abostroem.github.io/2015-01-03-aas/intermediate/python-review/index.html</a><br
+/><br
+/>Matplotlib<br
+/><br
+/>View (read-only) the notebook here:<br
+/><a href="http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/matplotlib/Plotting%20with%20matplotlib.ipynb">http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/matplotlib/Plotting%20with%20matplotlib.ipynb</a><br
+/><br
+/>Open up your own copy and play along:<br
+/>2015-01-03-aas/intermediate/matplotlib/Plotting\ with\ matplotlib.ipynb<br
+/><br
+/>$ cd 2015-01-03-aas/intermediate/matplotlib<br
+/>$ ipython notebook<br
+/><br
+/>Restart your kernel:<br
+/>in the ipython notebook use the kernel menu to select restart (kernel --&gt; restart)<br
+/>%matplotlib inline = make plots in the notebook<br
+/>%matplotlib&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = make an interactive plotting window<br
+/><br
+/>Resources are at the bottom of the notebook<br
+/>Here are the colourmap ones:<br
+/><ul><li><a href="http://matplotlib.org/users/colormaps.html">http://matplotlib.org/users/colormaps.html</a></li
+><li><a href="http://nbviewer.ipython.org/github/jiffyclub/brewer2mpl/blob/master/demo/brewer2mpl_maps.ipynb">http://nbviewer.ipython.org/github/jiffyclub/brewer2mpl/blob/master/demo/brewer2mpl_maps.ipynb</a><br/><br
+/></li></ul
+>in matplotlib often the keyword is keyword = 'none' NOT keyword = None (the string 'none' rather than the python reserved word None)<br
+/><br
+/>Data link: <a href="http://archive.stsci.edu/prepds/angst/datalist.html">http://archive.stsci.edu/prepds/angst/datalist.html</a><br
+/><br
+/>To reset to default style after using style sheets:<br
+/>import matplotlib as mpl&nbsp;<br
+/>mpl.rcParams.update(mpl.rcParamsDefault)<br
+/><br
+/>If you can remove ink and maintain clarity - you should. You want to present all of the material with the minimum amount of data<br
+/><br
+/>os.path.join = connects 2 paths<br
+/>os.path has lots of useful functions for manipulating file/path names<br
+/><br
+/>plt.savefig saves the figure you're working with to a file. Filetype is determined from filename extension (eg '.png', '.jpg', '.eps' and more).<br
+/><br
+/><br
+/><br
+/>Save to a multipage pdf: <a href="http://matplotlib.org/faq/howto_faq.html#save-multiple-plots-to-one-pdf-file">http://matplotlib.org/faq/howto_faq.html#save-multiple-plots-to-one-pdf-file</a><br
+/><br
+/>You can also turn off interactive plotting by typing:<br
+/>plt.ioff()&nbsp;<br
+/>at the beginning of your code. Then no windows will pop up.<br
+/><br
+/>AstroML has good binning functions and statistical tools even if you are not doing machine learning<br
+/>&nbsp;<br
+/><br
+/>TOPCAT: <a href="http://www.star.bris.ac.uk/~mbt/topcat/">http://www.star.bris.ac.uk/~mbt/topcat/</a><br
+/>GLUE <a href="http://projects.iq.harvard.edu/seamlessastronomy/software/glue">http://projects.iq.harvard.edu/seamlessastronomy/software/glue</a><br
+/><br
+/><b><u>Astropy</u></b><br
+/><ul><li>The lesson notebook: <a href="https://github.com/abostroem/2015-01-03-aas/raw/gh-pages/intermediate/astropy/Introduction_to_Astropy.ipynb">https://github.com/abostroem/2015-01-03-aas/raw/gh-pages/intermediate/astropy/Introduction_to_Astropy.ipynb</a></li
+><li>View the notebook online: <a href="http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/astropy/Introduction_to_Astropy.ipynb">http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/astropy/Introduction_to_Astropy.ipynb</a></li
+><li>Or get it directly from your git clone of the lessons, under:<ul><li>2015-01-03-aas/intermediate/astropy/</li
+><li>do a `git pull origin gh-pages' to get the latest data files</li
+><li><br/><br/><br
+/></li></ul
+></li></ul
+>FK5 default is J2000.0:<br
+/><a href="http://astropy.readthedocs.org/en/latest/api/astropy.coordinates.FK5.html#astropy.coordinates.FK5">http://astropy.readthedocs.org/en/latest/api/astropy.coordinates.FK5.html#astropy.coordinates.FK5</a><br
+/><br
+/>For making tables for papers, you often need data+/uncertainties, rounded to the<br
+/>right number of significant figures.&nbsp; The Python uncertainties package can<br
+/>help with this:<br
+/><a href="https://pypi.python.org/pypi/uncertainties/">https://pypi.python.org/pypi/uncertainties/</a><br
+/>I have some code which works with it to output LaTeX tables from astropy tables, see&nbsp;<br
+/><a href="https://gist.github.com/PBarmby/e4384a81cf2e1c53365c">https://gist.github.com/PBarmby/e4384a81cf2e1c53365c</a><br
+/><br
+/><b><u>Git Resources:</u></b><br
+/>Git resource book: <a href="http://git-scm.com/book/en/v2">http://git-scm.com/book/en/v2</a><br
+/>Information on git educational and research discounts: <a href="https://education.github.com">https://education.github.com</a><br
+/><br
+/><b><u>Please take a few minutes to fill out the following surveys to help SWC and the AAS improve your workshop experience:</u></b><br
+/><br
+/>SWC:<br
+/><a href="http://goo.gl/forms/Iipg9pexh8">http://goo.gl/forms/Iipg9pexh8</a><br
+/>AAS:<br
+/><a href="http://bit.ly/aas225workshops">http://bit.ly/aas225workshops</a>&nbsp;<br
+/><br
+/><br
+/>Contact Information:<br
+/><br
+/>software-carpentry.org<br
+/>admin@software-carpentry.org<br
+/>@swcarpentry<br
+/><br
+/>Matt:<br
+/>jiffyclub@gmail.com<br
+/>@jiffyclub<br
+/><a href="http://penandpants.com">http://penandpants.com</a><br
+/><br
+/>Azalee Bostroem<br
+/>abostroem@gmail.com<br
+/>@astro_az<br
+/><a href="https://azaleebostroem.wordpress.com">https://azaleebostroem.wordpress.com</a><br
+/><br
+/>Erik Bray<br
+/>embray@stsci.edu<br
+/>@iguananaut<br
+/><br
+/>Phil Rosenfield<br
+/>@philrosenfield<br
+/>philrosenfield@gmail.com<br
+/><br
+/>Pauline Barmby<br
+/>@PBarmby<br
+/>pbarmby@uwo.ca<br
+/><br
+/></body>
+</html>
