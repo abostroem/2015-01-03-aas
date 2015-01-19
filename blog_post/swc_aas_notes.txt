@@ -1,6 +1,6 @@
 We just finished a workshop at the American Astronomical Society. I was lucky to recruit
 3 instructors (in addition to myself) - Matt Davis, Erik Bray, and Phil Rosenfield. We also
-had Paule Barmby volunteer as a helper.
+had Pauline Barmby volunteer as a helper.
 
 Pre-Workshop Meetings
 We started meeting at the beginning of October.
@@ -14,9 +14,9 @@ can comment if they did.
 
 I asked all helpers if they would like to teach a 15 minutes sections. This is something I
 like to do at every workshop I lead. It gives helpers a chance to teach (if they are not
-familiar with it) and to get a sense of what it is like to be infront of the class: how fast
+familiar with it) and to get a sense of what it is like to be in front of the class: how fast
 to go, where do students get lost, what is it like to explain concepts. With a 15 minute
-piece of instruction time - even if the lesson is a disaster (which none of our were) the
+piece of instruction time - even if the lesson is a disaster (which none of ours were) the
 course is relatively unaffected.
 
 I included the helpers and instructors on all correspondence prior to the workshop so that
@@ -47,6 +47,7 @@ encountered no installation issues and students were able to open and save files
 not use Sublime Text for git.
 
 --> Matt, Erik, Phil, Pauline - did we use Sublime Text for anything?
+    [Not that I recall --PB]
 
 We left 3 hours at the end of the day as flex time. We thought our schedule may be ambitious
 and wanted to leave time to either finish the lessons or allow the audience to ask questions.
@@ -54,6 +55,7 @@ and wanted to leave time to either finish the lessons or allow the audience to a
 Teaching:
 During each lesson I assign a different person to take notes on the etherpad and answer any
 questions that arise. I try to make sure a different person is doing this each lesson.
+https://github.com/abostroem/2015-01-03-aas/blob/gh-pages/etherpad/2015-01-03-aas-day2.html
 
 On day 1 Matt Davis taught the shell in the morning. Astronomers generally have experience in the shell
 and as a result after a brief survey of the room Matt was able to start the shell at lesson 5
@@ -74,7 +76,9 @@ at the student's home institution. It is also very easy to implement. Matt mocke
 terribly written code (link to code here) and we asked students to look at it in groups.
 We then went through each group and asked for a comment. I really enjoyed this section and
 thought it present a nice opportunity for students to implement the best coding practices they
-had just learned and for us to discuss it with them using a real example.
+had just learned and for us to discuss it with them using a real
+example.  It's also a nice way to finish off the day, by providing
+learners with an active experience that's not incredibly mentally-taxing.
 
 We started day 2 with git. I don't like to teach git entirely from the command line. Instead I like
 to present what we are doing and the command on slides - going back to the command line to do an
@@ -88,16 +92,25 @@ pretty closely for local git, although I left out the discussion of the gitignor
 I started out following the remote git lesson - having each student create a remote repository.
 However, to give them a sense of actually collaborating I had each person find a pair and assign one
 person to be Dracula and one person to be Wolfman. Wolfman then cloned Dracula's repository and
-I then lead them through a series of exercises
+I then led them through a series of exercises
 where they first just pulled, modified, and pushed without the other person making any changes.
 Next they both modified but without conflicts. Finally they modified the same line and resolved
 conflicts. The whole git lesson went much faster than I anticipated.
 
-Next Pauline presented her python lesson.
----> I can't remember what this was one - please fill in the details
+Next Pauline presented her python lesson. This involved walking
+through steps 1-4 of Erik's 'simcluster' notebook
+http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/python-simcluster/simulated.ipynb
+which shows how to run python code from the command line,
+how to parse command-line arguments using argparse, and how to break
+code up into functions. This went relatively smoothly although Pauline
+suspects it might have been a bit too fast for everyone to follow.
 
-In the afternoon Phil presented a short introduction to the magic of matplotlib and Erik showed
-them around astropy. Most of the python we did on day 2 was presented in a show and tell manner
+In the afternoon Phil presented a short introduction to the magic of
+matplotlib 
+http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/matplotlib/Plotting%20with%20matplotlib.ipynb
+and Erik showed the learners around astropy. 
+http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/astropy/Introduction_to_Astropy.ipynb
+Most of the python we did on day 2 was presented in a show and tell manner
 where students executed pre-written code rather than typed it themselves. This was an effective
 way to show them what is available. While this is good for future reference I worry that we may
 be giving them more information than they can digest in a day.
