@@ -77,7 +77,8 @@ was planning on covering and presented that on day 2.
 At my last 2 workshops we've decided to teach code review instead of testing. I believe that
 while many students walk away from our testing unit without knowing how to apply the testing
 to their work, code review is a valuable tool that can prevent mistakes and help build a community
-at the student's home institution. It is also very easy to implement. Matt mocked up a
+at the student's home institution. It is also very easy to implement and can easily be taught in
+45 minutes to an hour. Matt mocked up a
 [terribly written code](https://github.com/abostroem/2015-01-03-aas/blob/gh-pages/novice/code-review/data_processor.py)
 and we asked students to look at it in groups.
 We then went through each group and asked for a comment. I really enjoyed this section and
@@ -86,6 +87,8 @@ had just learned and for us to discuss it with them using a real
 example.  It's also a nice way to finish off the day, by providing
 learners with an active experience that's not incredibly mentally-taxing.
 
+We asked for good and bad stickies at the end of the day and reviewed them over dinner.
+
 ## Day 2
 
 We started day 2 with Git. I don't like to teach git entirely from the command line. Instead I like
@@ -93,8 +96,8 @@ to present what we are doing and the command on slides - going back to the comma
 example of what I've just told students and then putting up a slide with a challenge problem
 on it. I used slides.com to create an HTML5 slide show that I could version control, send students
 links to, and present to the class. My presentations can be viewed here:
-http://slides.com/abostroem/local_version_control
-http://slides.com/abostroem/collaborating_using_git
+[local git](http://slides.com/abostroem/local_version_control)
+[remote git](http://slides.com/abostroem/collaborating_using_git)
 Overall this strategy worked well. I followed the lessons
 pretty closely for local git, although I left out the discussion of the gitignore file.
 I started out following the remote git lesson - having each student create a remote repository.
@@ -103,17 +106,19 @@ person to be Dracula and one person to be Wolfman. Wolfman then cloned Dracula's
 I then led them through a series of exercises
 where they first just pulled, modified, and pushed without the other person making any changes.
 Next they both modified but without conflicts. Finally they modified the same line and resolved
-conflicts. The whole Git lesson went much faster than I anticipated.
+conflicts. The whole Git lesson went much faster than I anticipated (I expected at least 3 hours
+and finished in 2.5).
+[Matt, Erik, Pauline, Phil - does that timing sound right?]
 
 Next Pauline presented her Python lesson. This involved walking
-through steps 1-4 of Erik's 
+through steps 1-4 of Erik's
 ['simcluster' notebook](http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/python-simcluster/simulated.ipynb)
 which shows how to run python code from the command line,
 how to parse command-line arguments using argparse, and how to break
 code up into functions. This went relatively smoothly, although Pauline
 suspects it might have been a bit too fast for everyone to follow.
 
-In the afternoon Phil presented a 
+In the afternoon Phil presented a
 [short introduction to of matplotlib](http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/matplotlib/Plotting%20with%20matplotlib.ipynb)
 and Erik showed the learners around
 [AstroPy](http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/astropy/Introduction_to_Astropy.ipynb).
@@ -129,3 +134,4 @@ exercises and trying to cover lots of material.
 
 Overall - this workshop went very smoothly - no major issues. Thanks to all the instructors
 and helpers!
+
