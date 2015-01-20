@@ -2,10 +2,11 @@ We just finished a workshop at the American Astronomical Society. I was lucky to
 3 instructors (in addition to myself) - Matt Davis, Erik Bray, and Phil Rosenfield. We also
 had Pauline Barmby volunteer as a helper.
 
-Pre-Workshop Meetings
+# Pre-Workshop Meetings
+
 We started meeting at the beginning of October.
 Our first meeting was attended by only instructors. Despite a laughable number of technical difficulties
-we were able to decide on our curriculum, schedule, and who was teaching what. We held 2 other
+we were able to decide on our curriculum, schedule, and who was teaching what. We held two other
 shorter meetings which included helpers to work out logistics and answer any questions (mostly
 mine). It was really nice to see everyone's face prior to the meeting. Additionally, we decided
 to meet the night before the workshop for a little more face time. I also set up an etherpad
@@ -23,8 +24,9 @@ I included the helpers and instructors on all correspondence prior to the worksh
 they knew the information that was given to the students on the first day and also to give
 them a window into the lead instructor's duties prior to the workshop.
 
-Workshop Set-up
-We decided to use the set-up test script from here. http://swcarpentry.github.io/workshop-template/setup/index.html.
+# Workshop Set-up
+
+We decided to use the set-up test script from [here](http://swcarpentry.github.io/workshop-template/setup/index.html).
 I modified the first test script to test for specific versions of numpy, scipy, matplotlib, and astropy.
 I emailed the modified scripts to students prior to the lesson and a link to the instructions for running them. We were able
 to head off many installation issues. We also had a number of students show up early the first day for installation help.
@@ -33,7 +35,7 @@ of students ran the scripts downloaded them from the instructions rather than fr
 a number of unnecessary packages. These students encountered issues installing EasyMercurial and
 mayavi. Trevor King and I are currently working on an issue to comment out the packages we don't regularly
 teach in the default installation script. We had a lot of custom
-installations which often led to small differences and errors during the lessons (specifically in python).
+installations which often led to small differences and errors during the lessons (especially in Python).
 We also had a request from a student to modify the installation test script to handle dev versions.
 
 I also sent students the Etherpad link prior to the workshop. At Erik's suggestion I created a
@@ -47,15 +49,18 @@ encountered no installation issues and students were able to open and save files
 not use Sublime Text for git.
 
 --> Matt, Erik, Phil, Pauline - did we use Sublime Text for anything?
-    [Not that I recall --PB]
+    [Not that I recall --PB][Nope. -- MD]
 
 We left 3 hours at the end of the day as flex time. We thought our schedule may be ambitious
 and wanted to leave time to either finish the lessons or allow the audience to ask questions.
 
-Teaching:
+# Teaching
+
 During each lesson I assign a different person to take notes on the etherpad and answer any
 questions that arise. I try to make sure a different person is doing this each lesson.
 https://github.com/abostroem/2015-01-03-aas/blob/gh-pages/etherpad/2015-01-03-aas-day2.html
+
+## Day 1
 
 On day 1 Matt Davis taught the shell in the morning. Astronomers generally have experience in the shell
 and as a result after a brief survey of the room Matt was able to start the shell at lesson 5
@@ -70,20 +75,23 @@ decided to give Pauline a chance to instruct and she worked on the end of the le
 was planning on covering and presented that on day 2.
 
 At my last 2 workshops we've decided to teach code review instead of testing. I believe that
-while many students walk away from out testing unit without knowing how to apply the testing
+while many students walk away from our testing unit without knowing how to apply the testing
 to their work, code review is a valuable tool that can prevent mistakes and help build a community
 at the student's home institution. It is also very easy to implement. Matt mocked up a
-terribly written code (link to code here) and we asked students to look at it in groups.
+[terribly written code](https://github.com/abostroem/2015-01-03-aas/blob/gh-pages/novice/code-review/data_processor.py)
+and we asked students to look at it in groups.
 We then went through each group and asked for a comment. I really enjoyed this section and
 thought it present a nice opportunity for students to implement the best coding practices they
 had just learned and for us to discuss it with them using a real
 example.  It's also a nice way to finish off the day, by providing
 learners with an active experience that's not incredibly mentally-taxing.
 
-We started day 2 with git. I don't like to teach git entirely from the command line. Instead I like
+## Day 2
+
+We started day 2 with Git. I don't like to teach git entirely from the command line. Instead I like
 to present what we are doing and the command on slides - going back to the command line to do an
 example of what I've just told students and then putting up a slide with a challenge problem
-on it. I used slides.com to create an html5 slide show that I could version control, send students
+on it. I used slides.com to create an HTML5 slide show that I could version control, send students
 links to, and present to the class. My presentations can be viewed here:
 http://slides.com/abostroem/local_version_control
 http://slides.com/abostroem/collaborating_using_git
@@ -95,22 +103,21 @@ person to be Dracula and one person to be Wolfman. Wolfman then cloned Dracula's
 I then led them through a series of exercises
 where they first just pulled, modified, and pushed without the other person making any changes.
 Next they both modified but without conflicts. Finally they modified the same line and resolved
-conflicts. The whole git lesson went much faster than I anticipated.
+conflicts. The whole Git lesson went much faster than I anticipated.
 
-Next Pauline presented her python lesson. This involved walking
-through steps 1-4 of Erik's 'simcluster' notebook
-http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/python-simcluster/simulated.ipynb
+Next Pauline presented her Python lesson. This involved walking
+through steps 1-4 of Erik's 
+['simcluster' notebook](http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/python-simcluster/simulated.ipynb)
 which shows how to run python code from the command line,
 how to parse command-line arguments using argparse, and how to break
-code up into functions. This went relatively smoothly although Pauline
+code up into functions. This went relatively smoothly, although Pauline
 suspects it might have been a bit too fast for everyone to follow.
 
-In the afternoon Phil presented a short introduction to the magic of
-matplotlib 
-http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/matplotlib/Plotting%20with%20matplotlib.ipynb
-and Erik showed the learners around astropy. 
-http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/astropy/Introduction_to_Astropy.ipynb
-Most of the python we did on day 2 was presented in a show and tell manner
+In the afternoon Phil presented a 
+[short introduction to of matplotlib](http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/matplotlib/Plotting%20with%20matplotlib.ipynb)
+and Erik showed the learners around
+[AstroPy](http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/astropy/Introduction_to_Astropy.ipynb).
+Most of the Python we did on day 2 was presented in a show-and-tell manner
 where students executed pre-written code rather than typed it themselves. This was an effective
 way to show them what is available. While this is good for future reference I worry that we may
 be giving them more information than they can digest in a day.
