@@ -135,3 +135,47 @@ exercises and trying to cover lots of material.
 Overall - this workshop went very smoothly - no major issues. Thanks to all the instructors
 and helpers!
 
+## N.B. Instructor Interaction
+
+A number of events have culminated in me thinking about interacting with my fellow instructors in front
+of the class.
+
+* I raised my hand a few times during Erik's Python lesson on day 1 and when called on asked if he wanted to
+explain something in a little more detail. I stayed at the back of the room while speaking. At different times
+Erik chose to either explain, say that was beyond the scope of the lesson, or that we would come back to it
+later.
+
+* We had a sticky note on the first day saying: "Erik should have listened to Azalee". I worried that
+my interruptions had been disrespectful to Erik in the eyes of the students and possibly reduced
+his effectiveness as an instructor.
+
+* In the Train the Trainers event at UC Davis Greg said that you should not interrupt fellow instructors
+as it splits the focus of students (which is already split between the instructor and the screen).
+
+* There was a discussion of this at our SWC workshop debriefing. Here Greg also mentioned that if
+you are going to interrupt you can walk towards the front of the classroom to signal that you want to say
+something and at that point the focus is less split.
+
+I believe my take away from all of this is the following:
+
+* Most instructor to instructor interaction in front of the class is good (this is not scientific
+just anecdotal). It can draw the instructor's attention to something they left out or add information
+that benefits the class.
+
+* It is really important how this interaction comes about. You should never speak over your fellow
+instructor. I think ideally you can slowly walk towards the front with your hand up and hang on the
+sidelines until the instructor at the front of the room acknowledges you. This keeps the control
+of the lesson in the hands of the instructor who is leading the lesson.
+
+* Interruptions should be used sparingly. They should only clarify material never complicate it.
+If at all possible you should phrase your information in such a way that the instructor who is leading
+the discussion can explain it to the class. This allows the instructor to maintain the focus of the
+class and can continue to demonstrate their knowledge of the material that they are teaching.
+
+* This should be discussed before the workshop. Instructors should ask each other - are you
+ok with a interruption and how can I let you know that I have something to add?
+
+* Discussion beforehand also opens the door to an instructor saying - please don't interrupt - or to say - let me
+see how it goes - I will let you know if it's not working.
+
+
