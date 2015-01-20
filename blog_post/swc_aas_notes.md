@@ -96,8 +96,8 @@ to present what we are doing and the command on slides - going back to the comma
 example of what I've just told students and then putting up a slide with a challenge problem
 on it. I used slides.com to create an HTML5 slide show that I could version control, send students
 links to, and present to the class. My presentations can be viewed here:
-[local git](http://slides.com/abostroem/local_version_control)
-[remote git](http://slides.com/abostroem/collaborating_using_git)
+[local git](http://slides.com/abostroem/local_version_control),
+[remote git](http://slides.com/abostroem/collaborating_using_git).
 Overall this strategy worked well. I followed the lessons
 pretty closely for local git, although I left out the discussion of the gitignore file.
 I started out following the remote git lesson - having each student create a remote repository.
