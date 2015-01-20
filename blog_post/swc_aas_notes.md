@@ -119,8 +119,13 @@ and Erik showed the learners around
 [AstroPy](http://nbviewer.ipython.org/github/abostroem/2015-01-03-aas/blob/gh-pages/intermediate/astropy/Introduction_to_Astropy.ipynb).
 Most of the Python we did on day 2 was presented in a show-and-tell manner
 where students executed pre-written code rather than typed it themselves. This was an effective
-way to show them what is available. While this is good for future reference I worry that we may
+way to show them what is available. While this is good for future reference, I worry that we may
 be giving them more information than they can digest in a day.
+
+One of the most consistent bits of feedback we got was that people really like doing group exercises
+like the code review exercise on day 1. Our Python lessons had little in the way of exercises,
+especially on day 2, but with these workshops there is always a balancing act between having
+exercises and trying to cover lots of material.
 
 Overall - this workshop went very smoothly - no major issues. Thanks to all the instructors
 and helpers!
