@@ -58,7 +58,7 @@ and wanted to leave time to either finish the lessons or allow the audience to a
 
 During each lesson I assign a different person to take notes on the etherpad and answer any
 questions that arise. I try to make sure a different person is doing this each lesson.
-https://github.com/abostroem/2015-01-03-aas/blob/gh-pages/etherpad/2015-01-03-aas-day2.html
+View our etherpad [here](https://abostroem.etherpad.mozilla.org/2015-01-03-aas).
 
 ## Day 1
 
