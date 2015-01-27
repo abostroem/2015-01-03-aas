@@ -164,7 +164,9 @@ One of the most consistent bits of feedback we got was that people really like
 doing group exercises like the code review exercise on day 1. Our Python
 lessons had little in the way of exercises, especially on day 2, but with these
 workshops there is always a balancing act between having exercises and trying
-to cover lots of material.
+to cover lots of material.  (I'd like to experiment with multiple choice
+questions and peer instructions as a way to intersperse quick group discussions
+in workshops. -MD)
 
 Overall - this workshop went very smoothly - no major issues. Thanks to all the
 instructors and helpers!
