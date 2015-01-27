@@ -12,7 +12,11 @@ and answer any questions (mostly mine). It was really nice to see everyone's
 face prior to the meeting. Additionally, we decided to meet the night before
 the workshop for a little more face time. I also set up an etherpad that held
 notes from all of the meetings. I found this very useful - other instructors
-and helpers can comment if they did.
+and helpers can comment if they did. [I've had mixed success with etherpad use
+in workshops.  I think this one was sort of in the middle but overall it was
+very good to have.  People seemed to appreciate the notes in there, and it
+was also useful as a shared copy/paste.  A few people asked good questions in
+the etherpad but not as many as I like to see. --Erik]
 
 I asked all helpers if they would like to teach a 15 minutes sections. This is
 something I like to do at every workshop I lead. It gives helpers a chance to
@@ -34,22 +38,25 @@ We decided to use the set-up test script from
 modified the first test script to test for specific versions of numpy, scipy,
 matplotlib, and astropy.  I emailed the modified scripts to students prior to
 the lesson and a link to the instructions for running them. We were able to
-head off many installation issues. We also had a number of students show up
-early the first day for installation help.  It is possible that having the
-installation script alerted people to when they did not have a correct
-installation. A number of students ran the scripts downloaded them from the
-instructions rather than from my email. As a result they installed a number of
-unnecessary packages. These students encountered issues installing
-EasyMercurial and mayavi. Trevor King and I are currently working on an issue
-to comment out the packages we don't regularly teach in the default
-installation script. We had a lot of custom installations which often led to
-small differences and errors during the lessons (especially in Python).  We
-also had a request from a student to modify the installation test script to
-handle dev versions.
+head off many installation issues. [I think this workshop had some of the
+fewest installation problems I've seen. --Erik]
+
+We also had a number of students show up early the first day for installation
+help.  It is possible that having the installation script alerted people to
+when they did not have a correct installation. A number of students who ran the
+scripts downloaded them from the instructions rather than from my email. As a
+result they installed a number of unnecessary packages. These students
+encountered issues installing EasyMercurial and mayavi. Trevor King and I are
+currently working on an issue to comment out the packages we don't regularly
+teach in the default installation script. We had a lot of custom installations
+which often led to small differences and errors during the lessons (especially
+in Python).  We also had a request from a student to modify the installation
+test script to handle dev versions.
 
 I also sent students the Etherpad link prior to the workshop. At Erik's
 suggestion I created a short link to both the course website and etherpad -
-this worked really well.
+this worked really well. [Is this mentioned in any of the workshop setup
+instructions?  I think it should be, if not. --Erik]
 
 At my last workshop I received a number of comments regarding using Nano as the
 text editor.  Specifically students wanted to know why we asked everyone to
@@ -62,9 +69,14 @@ did not use Sublime Text for git.
 --> Matt, Erik, Phil, Pauline - did we use Sublime Text for anything?
     [Not that I recall --PB][Nope. -- MD]
 
+[I have a certain fondness for nano, but when we rely on it I do worry that it
+gives the impression to shell beginners that this is what they have to do if
+they want to edit files at the command-line.  Not sure what to do about that.
+--Erik]
+
 We left 3 hours at the end of the day as flex time. We thought our schedule may
 be ambitious and wanted to leave time to either finish the lessons or allow the
-audience to ask questions.
+audience to ask questions.  This wound up being a good call.
 
 # Teaching
 
@@ -128,7 +140,7 @@ the other person making any changes.  Next they both modified but without
 conflicts. Finally they modified the same line and resolved conflicts. The
 whole Git lesson went much faster than I anticipated (I expected at least 3
 hours and finished in 2.5).
-[Matt, Erik, Pauline, Phil - does that timing sound right?]
+[Matt, Erik, Pauline, Phil - does that timing sound right?  I think so.]
 
 Next Pauline presented her Python lesson. This involved walking through steps
 1-4 of Erik's ['simcluster'
@@ -169,7 +181,8 @@ later.
 
 * We had a sticky note on the first day saying: "Erik should have listened to Azalee". I worried that
 my interruptions had been disrespectful to Erik in the eyes of the students and possibly reduced
-his effectiveness as an instructor.
+his effectiveness as an instructor. [I didn't feel that way, but I still need to work on my
+engangement with the room in general--it's hard to read them at my current level. --Erik]
 
 * In the Train the Trainers event at UC Davis Greg said that you should not interrupt fellow instructors
 as it splits the focus of students (which is already split between the instructor and the screen).
