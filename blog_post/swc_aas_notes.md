@@ -1,6 +1,7 @@
-We just finished a workshop at the American Astronomical Society. I was lucky
+We just finished<sup>*</sup> a workshop at the American Astronomical Society. I was lucky
 to recruit 3 instructors (in addition to myself) - Matt Davis, Erik Bray, and
-Phil Rosenfield. We also had Pauline Barmby volunteer as a helper.
+Phil Rosenfield. We also had Pauline Barmby volunteer as a helper (and on the fly instructor).
+While I wrote this blog post, you will see comments inserted by the instructors.
 
 # Pre-Workshop Meetings
 
@@ -12,18 +13,14 @@ and answer any questions (mostly mine). It was really nice to see everyone's
 face prior to the meeting. Additionally, we decided to meet the night before
 the workshop for a little more face time. I also set up an etherpad that held
 notes from all of the meetings. I found this very useful - other instructors
-and helpers can comment if they did. [I've had mixed success with etherpad use
-in workshops.  I think this one was sort of in the middle but overall it was
-very good to have.  People seemed to appreciate the notes in there, and it
-was also useful as a shared copy/paste.  A few people asked good questions in
-the etherpad but not as many as I like to see. --Erik]
+and helpers can comment if they did.
 
 I asked all helpers if they would like to teach a 15 minutes sections. This is
 something I like to do at every workshop I lead. It gives helpers a chance to
 teach (if they are not familiar with it) and to get a sense of what it is like
 to be in front of the class: how fast to go, where do students get lost, what
 is it like to explain concepts. With a 15 minute piece of instruction time -
-even if the lesson is a disaster (which none of ours were) the course is
+even if the lesson is a disaster (which none of ours were) the workshop is
 relatively unaffected.
 
 I included the helpers and instructors on all correspondence prior to the
@@ -62,13 +59,10 @@ At my last workshop I received a number of comments regarding using Nano as the
 text editor.  Specifically students wanted to know why we asked everyone to
 download Nano, used Nano, and then told them that they should probably use
 something else. As a result we had everyone download Sublime Text in addition
-to Nano. Although we didn't try to link it to the command line, we encountered
-no installation issues and students were able to open and save files in it. We
-did not use Sublime Text for git.
-
---> Matt, Erik, Phil, Pauline - did we use Sublime Text for anything?
-    [Not that I recall --PB][Nope. -- MD]
-
+to Nano. We still used Nano for the teaching git. Students seemed happy to know that
+they had Sublime Text and I saw many students opening and using it although we never
+formally used it in our lessons. Although we didn't try to link it to the command line,
+ we encountered no installation issue.
 [I have a certain fondness for nano, but when we rely on it I do worry that it
 gives the impression to shell beginners that this is what they have to do if
 they want to edit files at the command-line.  Not sure what to do about that.
@@ -84,13 +78,18 @@ During each lesson I assign a different person to take notes on the etherpad
 and answer any questions that arise. I try to make sure a different person is
 doing this each lesson.  View our etherpad
 [here](https://abostroem.etherpad.mozilla.org/2015-01-03-aas).
+[I've had mixed success with etherpad use
+in workshops.  I think this one was sort of in the middle but overall it was
+very good to have.  People seemed to appreciate the notes in there, and it
+was also useful as a shared copy/paste.  A few people asked good questions in
+the etherpad but not as many as I like to see. --Erik]
 
 ## Day 1
 
 On day 1 Matt Davis taught the shell in the morning. Astronomers generally have
 experience in the shell and as a result after a brief survey of the room Matt
 was able to start the shell at lesson 5 on loops. Even those students less
-familiar with the shell were able to follow along writing commands.
+familiar with the shell were able to follow along.
 
 Erik spent most of the rest of the day teaching Python. This group was mostly
 made up of people who had programmed before in another language and some who
@@ -129,18 +128,17 @@ to create an HTML5 slide show that I could version control, send students links
 to, and present to the class. My presentations can be viewed here: [local
 git](http://slides.com/abostroem/local_version_control), [remote
 git](http://slides.com/abostroem/collaborating_using_git).  Overall this
-strategy worked well. I followed the lessons pretty closely for local git,
+strategy worked well. I followed the SWC lessons pretty closely for local git,
 although I left out the discussion of the gitignore file.  I started out
 following the remote git lesson - having each student create a remote
 repository.  However, to give them a sense of actually collaborating I had each
 person find a pair and assign one person to be Dracula and one person to be
-Wolfman. Wolfman then cloned Dracula's repository and I then led them through a
+Wolfman. Wolfman then cloned Dracula's repository and I led them through a
 series of exercises where they first just pulled, modified, and pushed without
 the other person making any changes.  Next they both modified but without
 conflicts. Finally they modified the same line and resolved conflicts. The
 whole Git lesson went much faster than I anticipated (I expected at least 3
 hours and finished in 2.5).
-[Matt, Erik, Pauline, Phil - does that timing sound right?  I think so.]
 
 Next Pauline presented her Python lesson. This involved walking through steps
 1-4 of Erik's ['simcluster'
@@ -215,5 +213,6 @@ ok with a interruption and how can I let you know that I have something to add?
 * Discussion beforehand also opens the door to an instructor saying - please don't interrupt - or to say - let me
 see how it goes - I will let you know if it's not working.
 
+<sup>*<sup> This was written in January, its taken me a while to post it.
 
 
